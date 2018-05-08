@@ -96,6 +96,7 @@ CREATE TABLE Lecture(
     Lecture_attendance INT NOT NULL,
     Staff_ID INT,
     stud_ID INT NULL,
+    lec_start-time VARCHAR(5) NOT NULL,
     
     CONSTRAINT PK_Lecture PRIMARY KEY (Lecture_ID),
     
