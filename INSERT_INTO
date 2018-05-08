@@ -147,5 +147,41 @@ VALUES (
 
 ----------------------------------------------Lecture_Equipment----------------------------------------------
 
+INSERT INTO Lecture_Equipment
+VALUES('EQ005', 'LC001');
+
+INSERT INTO Lecture_Equipment
+VALUES('EQ004', 'LC004');
+
+INSERT INTO Lecture_Equipment
+VALUES('EQ002', 'LC002');
+
+INSERT INTO Lecture_Equipment
+VALUES('EQ001', 'LC006');
+
+INSERT INTO Lecture_Equipment
+VALUES('EQ004', 'LC005');
+
+-------------------------------------FEEDBACK------------------------------
+
+INSERT INTO Feedback VALUES('FB0001', 1001, 5, 'LC006');
+INSERT INTO Feedback VALUES('FB0002', 1001, 10, 'LC001');
+INSERT INTO Feedback VALUES('FB0003', 1003, 9, 'LC001');
+INSERT INTO Feedback VALUES('FB0004', 1012, 7, 'LC004');
+INSERT INTO Feedback VALUES('FB0005', 1015, 8, 'LC002');
+INSERT INTO Feedback VALUES('FB0006', 1017, 4, 'LC002');
+INSERT INTO Feedback VALUES('FB0007', 1011, 8, 'LC002');
+INSERT INTO Feedback VALUES('FB0008', 1015, 7, 'LC006');
+INSERT INTO Feedback VALUES('FB0009', 1013, 7, 'LC001');
+INSERT INTO Feedback VALUES('FB0010', 1008, 7, 'LC001');
+INSERT INTO Feedback VALUES('FB0011', 1002, 10, 'LC005');
+INSERT INTO Feedback VALUES('FB0012', 1004, 7, 'LC002');
+INSERT INTO Feedback VALUES('FB0013', 1017, 6, 'LC001');
+INSERT INTO Feedback VALUES('FB0014', 1009, 6, 'LC004');
+INSERT INTO Feedback VALUES('FB0015', 1009, 9, 'LC002');
+INSERT INTO Feedback VALUES('FB0016', 1011, 1, 'LC005');
+INSERT INTO Feedback VALUES('FB0017', 1006, 7, 'LC001');
+INSERT INTO Feedback VALUES('FB0018', 1013, 2, 'LC004');
+INSERT INTO Feedback VALUES('FB0019', 1015, 9, 'LC004');
 
 
