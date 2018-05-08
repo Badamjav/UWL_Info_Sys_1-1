@@ -67,3 +67,22 @@ INSERT INTO student VALUES (0016, 'DONALD', 'AUSTIN', 07444555777);
 
 INSERT INTO student VALUES (0017, 'ROBERT','RIPPEN', 07333444555);
 
+------------------------------------------REQUIRED_EQUIPMENT-------------------------------------
+
+INSERT INTO Required_Equipment
+VALUES('EQ001', 'A projector is an optical device that projects an image onto a surface, commonly a projection screen. ');
+
+INSERT INTO Required_Equipment
+VALUES('EQ002', 'A loudspeaker is the functional opposite of a microphone. Since a conventional speaker is constructed much like a dynamic microphone (with a diaphragm, coil and magnet), speakers can actually work "in reverse" as microphones.');
+
+INSERT INTO Required_Equipment
+VALUES('EQ003', 'A loudspeaker (or loud-speaker or speaker) is an electroacoustic transducer; which converts an electrical audio signal into a corresponding sound.');
+
+INSERT INTO Required_Equipment
+VALUES('EQ004', 'A computer monitor is an output device which displays information in pictorial form. A monitor usually comprises the display device, circuitry, casing, and power supply. ');
+
+INSERT INTO Required_Equipment
+VALUES('EQ005', 'A lectern is a reading desk, with a slanted top, usually placed on a stand or affixed to some other form of support, on which documents or books are placed as support for reading aloud, as in a scripture reading, lecture, or sermon. ');
+
+
+
