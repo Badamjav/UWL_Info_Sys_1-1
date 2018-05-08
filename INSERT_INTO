@@ -84,5 +84,17 @@ VALUES('EQ004', 'A computer monitor is an output device which displays informati
 INSERT INTO Required_Equipment
 VALUES('EQ005', 'A lectern is a reading desk, with a slanted top, usually placed on a stand or affixed to some other form of support, on which documents or books are placed as support for reading aloud, as in a scripture reading, lecture, or sermon. ');
 
+-----------------------------------------STAFF-----------------------------------------------
 
+INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('101', 'John Dwayne', '0778293872');
+
+INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('102', 'Joseph Stalin', '07572839232');
+
+INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('103', 'Peter John', '0787652381');
+
+INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('104', 'Alice Keys', '0772286522');
+
+INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('105', 'Sophie Langford', '07112322322');
+
+---------------------------------------
 
