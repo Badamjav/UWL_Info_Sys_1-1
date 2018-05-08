@@ -1,7 +1,14 @@
-
-CREATE VIEW Volunteer_Info as
-select speaker_fname, speaker_lname, speaker_number, start_date, lec_start_time, room_number
-from speaker, lecture, room
+/* 
+    Creating View for Volunteering Students
+    So that they can see which date what time
+    which lecturer is coming to which room
+    and what equipment needed when there is volunteering student.
+*/  
+create view Volunteer_Info as
+select speaker_fname, speaker_number, start_date, lec_start_time, room_number,equipment_description, first_name as student_name, student.phone_number as student_number
+from speaker, lecture, room,lecture_equipment, required_equipment,student
 where speaker.speaker_id = lecture.speaker_id
 and room.room_id = lecture.room_id
-;
+and lecture.lecture_id = lecture_equipment.lecture_id
+and required_equipment.equipment_id = lecture_equipment.equipment_id
+and student.stud_id = lecture.stud_id;
