@@ -111,12 +111,13 @@ CREATE TABLE Lecture(
 CREATE TABLE Lecture_Equipment(
     Equipment_ID VARCHAR(5) NOT NULL,
     Lecture_ID Varchar(5) NOT NULL,
-    CONSTRAINT FK_LectureID FOREIGN KEY (Lecture_ID)
-    REFERENCES Lecture(Lecture_ID),
-    
-    CONSTRAINT FK_EquipmentID FOREIGN KEY (Equipment_ID)
-    REFERENCES Requirement_equipment(Equipment_ID)
+    CONSTRAINT pk_LecEquip PRIMARY KEY (Equipment_ID, Lecture_ID)
 );
+ALTER TABLE Lecture_Equipment
+ADD CONSTRAINT fk_lecEquipment FOREIGN KEY (Equipment_ID) REFERENCES Required_Equipment(Equipment_ID);
+
+ALTER TABLE Lecture_Equipment
+ADD CONSTRAINT fk_lecEquipment2 FOREIGN KEY (Lecture_ID) REFERENCES Lecture(Lecture_ID);
 -----------------------------------------------------------------------
 CREATE TABLE feedback(
     Feedback_ID VARCHAR(6) NOT NULL,
