@@ -1,70 +1,45 @@
---Badamjav
+
 ------------------ROOM-------------------
 
 INSERT INTO Room
 VALUES( 'R001', '1f.001', 240, 'Lecture Room');
-
 INSERT INTO Room
 VALUES( 'R002', '2f.011', 40, 'Seminar Room');
-
 INSERT INTO Room
 VALUES( 'R003', '4f.031', 150, 'Lecture Room');
-
 INSERT INTO Room
 VALUES( 'R004', '0f.010', 550, 'Venue');
-
 INSERT INTO Room
 VALUES( 'R005', '3f.021', 240, 'Lecture Room');
-
 INSERT INTO Room
 VALUES( 'R006', '1f.211', 140, 'Lecture Room');
-
 INSERT INTO Room
 VALUES( 'R007', '3f.021', 250, 'Lecture Room');
-
 INSERT INTO Room
 VALUES( 'R008', '1f.018', 50, 'Seminar Room');
-
 INSERT INTO Room
 VALUES( 'R009', '2f.025', 140, 'Lecture Room');
-
 INSERT INTO Room
 VALUES('R010', '3f.013', 60, 'Seminar Room');
 
 --------------------------------STUDENT---------------------------------------
 
 INSERT INTO student VALUES (1001, 'MEGAN', 'DONALD', 07398710422);
-
 INSERT INTO student VALUES (1002, 'PEY', 'KHALATBARI', 07564738399);
-
 INSERT INTO student VALUES (1003, 'LIAM', 'WILSON', 07452638949);
-
 INSERT INTO student VALUES (1004, 'RENEE','DENNIS', 07477489957);
-
 INSERT INTO student VALUES (1005, 'GABRIEL', 'CARSON', 07999888777);
-
 INSERT INTO student VALUES (1006, 'AVA', 'MADDOX', 07999888776);
-
 INSERT INTO student VALUES (1007,'HUNTER', 'POVEY', 07999888775);
-
 INSERT INTO student VALUES (1008, 'SHERRI','LAMB', 07888999000);
-
 INSERT INTO student VALUES (1009, 'MACKENZIE', 'FRANCO', 08888999001);
-
 INSERT INTO student VALUES (1010, 'EDIE', 'KNIGHT', 07888777666);
-
 INSERT INTO student VALUES (1011, 'NIKOLA', 'POPE', 07777888999);
-
 INSERT INTO student VALUES (1012, 'LILLY','HOWE', 07666777888);
-
 INSERT INTO student VALUES (1013, 'ZAARA', 'PEMBERTON', 07666777999);
-
 INSERT INTO student VALUES (1014, 'MAXINE', 'MAHONEY', 07555666777);
-
 INSERT INTO student VALUES (1015, 'SARAH', 'JAMES', 07123456789);
-
 INSERT INTO student VALUES (1016, 'DONALD', 'AUSTIN', 07444555777);
-
 INSERT INTO student VALUES (1017, 'ROBERT','RIPPEN', 07333444555);
 
 ------------------------------------------REQUIRED_EQUIPMENT-------------------------------------
@@ -87,14 +62,64 @@ VALUES('EQ005', 'A lectern is a reading desk, with a slanted top, usually placed
 -----------------------------------------STAFF-----------------------------------------------
 
 INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('101', 'John Dwayne', '0778293872');
-
 INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('102', 'Joseph Stalin', '07572839232');
-
 INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('103', 'Peter John', '0787652381');
-
 INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('104', 'Alice Keys', '0772286522');
-
 INSERT INTO "STAFF" (STAFF_ID, STAFF_NAME, CONTACT_NUMBER) VALUES ('105', 'Sophie Langford', '07112322322');
 
----------------------------------------
+---------------------------------------------Organisation----------------------------------------------------
+
+INSERT INTO Organisation VALUES ('ORG001', 'BT', 'BROADBAND',07398710422, 101);
+INSERT INTO Organisation VALUES ('ORG002', 'COMPUTER RESEARCH ASOS', 'COMPUTER SCIENCE', 07487810333, 105);
+INSERT INTO Organisation VALUES ('ORG003', 'RASPBERRY PI FOUNDATION', 'EDUCATIONAL', 07475820444, 103);
+INSERT INTO Organisation VALUES ('ORG004', 'BRITISH COMPUTER SOCIETY', 'TECHNOLOGY', 07392746235, 104);
+INSERT INTO Organisation VALUES ('ORG005', 'BRITISH CHEMICAL SOCIETY', 'CHEMISTRY',  07392746235, 101);
+
+---------------------------------------------Speaker----------------------------------------------------------
+
+INSERT INTO SPEAKER VALUES ('SP001', 'Sam',  'Wilson', 07213123123, 'ORG004');
+INSERT INTO SPEAKER VALUES ('SP002', 'RAY',  'Allen', 07123321123, 'ORG001');
+INSERT INTO SPEAKER VALUES ('SP003', 'Paul',  'Chris', 0721343112, 'ORG002');
+INSERT INTO SPEAKER VALUES ('SP004', 'Jay',  'Frank', 07123342123, 'ORG001');
+INSERT INTO SPEAKER VALUES ('SP005', 'Steve',  'Red', 07643123987, 'ORG003');
+INSERT INTO SPEAKER VALUES ('SP006', 'Kate',  'Penie', 07123876364, 'ORG004');
+INSERT INTO SPEAKER VALUES ('SP007', 'Frankie',  'Smith', 07987324123, 'ORG005');
+
+---------------------------------------------Placement--------------------------------------------------
+INSERT INTO placement VALUES ('PL011', 'Computer Aided Program', 'ORG004', TO_DATE('2018-07-01', 'YYYY-MM-DD'), TO_DATE('2018-09-01', 'YYYY-MM-DD'),1010);
+INSERT INTO placement VALUES ('PL002', 'Junior Software Develop', 'ORG001', TO_DATE('2018-05-31', 'YYYY-MM-DD'), TO_DATE('2018-10-31', 'YYYY-MM-DD'), 1002);
+INSERT INTO placement VALUES ('PL005', 'High Tech', 'ORG005', TO_DATE('2018-11-02', 'YYYY-MM-DD'), TO_DATE('2018-12-31', 'YYYY-MM-DD'), 1003);
+INSERT INTO placement VALUES ('PL003', 'CISCO Routines', 'ORG003', TO_DATE('2018-07-07', 'YYYY-MM-DD'), TO_DATE('2018-11-14', 'YYYY-MM-DD'), 1015);
+INSERT INTO placement VALUES ('PL001', 'HEPA Dev', 'ORG003', TO_DATE('2018-08-01', 'YYYY-MM-DD'), TO_DATE('2018-11-30', 'YYYY-MM-DD'), 1009);
+INSERT INTO placement VALUES ('PL004', 'General Hotel Mgmt', 'ORG001', TO_DATE('2018-04-30', 'YYYY-MM-DD'), TO_DATE('2018-10-27', 'YYYY-MM-DD'), 1005);
+INSERT INTO placement VALUES ('PL006', 'International Tourism', 'ORG002', TO_DATE('2018-05-31', 'YYYY-MM-DD'), TO_DATE('2018-07-20', 'YYYY-MM-DD'),1012);
+INSERT INTO placement VALUES ('PL007', 'PLUG-IN Freelancing', 'ORG005', TO_DATE('2018-05-26', 'YYYY-MM-DD'), TO_DATE('2018-07-02', 'YYYY-MM-DD'), 1011);
+INSERT INTO placement VALUES ('PL008', 'YAMAHA Motors', 'ORG004', TO_DATE('2018-04-30', 'YYYY-MM-DD'), TO_DATE('2018-06-30', 'YYYY-MM-DD'), 1008);
+
+----------------------------------------------Contact_History-------------------------------------------------------------------------------------------------------
+INSERT INTO CONTACT_HISTORY VALUES ('CH001', 'ORG001', TO_DATE('2018/12/20', 'YYYY-MM-DD'), 'Room Enquiry', '101');
+INSERT INTO CONTACT_HISTORY VALUES ('CH002', 'ORG002', TO_DATE('2018/03/10', 'YYYY-MM-DD'), 'New Lecturers', '102');
+INSERT INTO CONTACT_HISTORY VALUES ('CH003', 'ORG003', TO_DATE('2018/05/15', 'YYYY-MM-DD'), 'Availability of The Equipment', '105');
+INSERT INTO CONTACT_HISTORY VALUES ('CH004', 'ORG004', TO_DATE('2018/07/09', 'YYYY-MM-DD'), 'Changed Modules', '104');
+INSERT INTO CONTACT_HISTORY VALUES ('CH005', 'ORG005', TO_DATE('2018/11/10', 'YYYY-MM-DD'), 'New Students', '105');
+INSERT INTO CONTACT_HISTORY VALUES ('CH006', 'ORG002', TO_DATE('2018/06/30', 'YYYY-MM-DD'), 'Request for new placement', '103');
+
+---------------------------------------------------L_Project--------------------------------------------------------------------------
+
+INSERT INTO L_Project  
+VALUES ('PROJ001', 'algorithms', TO_DATE('2017,08/20', 'YYYY-MM-DD'), TO_DATE('2018/09/20', 'YYYY-MM-DD'),'ACTIVE', 'ORG001');
+INSERT INTO L_Project  
+VALUES ('PROJ002', 'Cyber Security', TO_DATE('2017,04/01', 'YYYY-MM-DD'), TO_DATE('2018/05/14', 'YYYY-MM-DD'),'ACTIVE', 'ORG003');
+INSERT INTO L_Project  
+VALUES ('PROJ003', 'Maths and Fun', TO_DATE('2018,01/17', 'YYYY-MM-DD'), TO_DATE('2018/02/17', 'YYYY-MM-DD'),'ACTIVE', 'ORG005');
+INSERT INTO L_Project  
+VALUES ('PROJ004', 'Computer Architecture', TO_DATE('2017,02/11', 'YYYY-MM-DD'), TO_DATE('2018/03/11', 'YYYY-MM-DD'),'ACTIVE', 'ORG004');
+INSERT INTO L_Project  
+VALUES ('PROJ005', 'Programming', TO_DATE('2017,01/10', 'YYYY-MM-DD'), TO_DATE('2017/06/20', 'YYYY-MM-DD'),'OFFLINE', 'ORG002');
+
+-----------------------------------------------------Lecture--------------------------------------------------------------------
+
+
+
+
 
