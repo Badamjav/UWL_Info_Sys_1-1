@@ -95,7 +95,7 @@ CREATE TABLE Lecture(
     Description_L CHAR(150) NOT NULL,
     Lecture_attendance INT NOT NULL,
     Staff_ID INT,
-    stud_ID INT,
+    stud_ID INT NULL,
     
     CONSTRAINT PK_Lecture PRIMARY KEY (Lecture_ID),
     
