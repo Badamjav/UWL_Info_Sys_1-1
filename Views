@@ -1,1 +1,7 @@
 
+CREATE VIEW Volunteer_Info as
+select speaker_fname, speaker_lname, speaker_number, start_date, lec_start_time, room_number
+from speaker, lecture, room
+where speaker.speaker_id = lecture.speaker_id
+and room.room_id = lecture.room_id
+;
