@@ -89,13 +89,13 @@ INSERT INTO SPEAKER VALUES ('SP007', 'Frankie',  'Smith', 07987324123, 'ORG005')
 
 ---------------------------------------------Placement--------------------------------------------------
 INSERT INTO placement VALUES ('PL011', 'Computer Aided Program', 'ORG004', TO_DATE('2018-07-01', 'YYYY-MM-DD'), TO_DATE('2018-09-01', 'YYYY-MM-DD'),1010);
-INSERT INTO placement VALUES ('PL002', 'Junior Software Develop', 'ORG001', TO_DATE('2018-05-31', 'YYYY-MM-DD'), TO_DATE('2018-10-31', 'YYYY-MM-DD'), 1002);
+INSERT INTO placement VALUES ('PL002', 'Junior Software Develop', 'ORG001', TO_DATE('2017-05-31', 'YYYY-MM-DD'), TO_DATE('2017-10-31', 'YYYY-MM-DD'), 1002);
 INSERT INTO placement VALUES ('PL005', 'High Tech', 'ORG005', TO_DATE('2018-11-02', 'YYYY-MM-DD'), TO_DATE('2018-12-31', 'YYYY-MM-DD'), 1003);
 INSERT INTO placement VALUES ('PL003', 'CISCO Routines', 'ORG003', TO_DATE('2018-07-07', 'YYYY-MM-DD'), TO_DATE('2018-11-14', 'YYYY-MM-DD'), 1015);
-INSERT INTO placement VALUES ('PL001', 'HEPA Dev', 'ORG003', TO_DATE('2018-08-01', 'YYYY-MM-DD'), TO_DATE('2018-11-30', 'YYYY-MM-DD'), 1009);
+INSERT INTO placement VALUES ('PL001', 'HEPA Dev', 'ORG003', TO_DATE('2017-08-01', 'YYYY-MM-DD'), TO_DATE('2018-01-30', 'YYYY-MM-DD'), 1009);
 INSERT INTO placement VALUES ('PL004', 'General Hotel Mgmt', 'ORG001', TO_DATE('2018-04-30', 'YYYY-MM-DD'), TO_DATE('2018-10-27', 'YYYY-MM-DD'), 1005);
 INSERT INTO placement VALUES ('PL006', 'International Tourism', 'ORG002', TO_DATE('2018-05-31', 'YYYY-MM-DD'), TO_DATE('2018-07-20', 'YYYY-MM-DD'),1012);
-INSERT INTO placement VALUES ('PL007', 'PLUG-IN Freelancing', 'ORG005', TO_DATE('2018-05-26', 'YYYY-MM-DD'), TO_DATE('2018-07-02', 'YYYY-MM-DD'), 1011);
+INSERT INTO placement VALUES ('PL007', 'PLUG-IN Freelancing', 'ORG005', TO_DATE('2016-05-26', 'YYYY-MM-DD'), TO_DATE('2017-07-02', 'YYYY-MM-DD'), 1011);
 INSERT INTO placement VALUES ('PL008', 'YAMAHA Motors', 'ORG004', TO_DATE('2018-04-30', 'YYYY-MM-DD'), TO_DATE('2018-06-30', 'YYYY-MM-DD'), 1008);
 
 ----------------------------------------------Contact_History-------------------------------------------------------------------------------------------------------
