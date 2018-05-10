@@ -45,6 +45,15 @@ where staff.staff_id = organisation.staff_id
 and organisation.org_id = projects.org_id
 and end_date > sysdate;
 
+-- 7. Listing which students are participating more in Volunteering.
+
+select count(lecture.stud_id) as "Volunteer Counter", first_name as "Student Name", phone_number as "Phone Number"
+from student, lecture
+where student.stud_id = lecture.stud_id
+group by first_name, phone_number
+order by count(lecture.stud_id);
+
+
 
 
 
