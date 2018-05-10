@@ -124,27 +124,27 @@ VALUES ('PROJ005', 'Programming', TO_DATE('2017,01/10', 'YYYY-MM-DD'), TO_DATE('
 INSERT INTO lecture
 VALUES (
     'LC001', 'SP003', TO_DATE('2018-06-11','YYYY-MM-DD'), 'R001', 'Big Data Usage', 
-    'The lecturer will teach about the benefits of big data', 203, 101, 1013
+    'The lecturer will teach about the benefits of big data', 203, 101, 1013, '13:00'
 );
 INSERT INTO lecture
 VALUES (
     'LC002', 'SP007', TO_DATE('2018-03-21','YYYY-MM-DD'), 'R004', 'AWS', 
-    'Amazon WEB Service', 400, 105, 1001
+    'Amazon WEB Service', 400, 105, 1001, '16:00'
 );
 INSERT INTO lecture
 VALUES (
     'LC004', 'SP004', TO_DATE('2018-02-12','YYYY-MM-DD'), 'R008', 'Interview skills', 
-    'The lecturer will teach us about how to prepare for interviews', 30, 103, NULL
+    'The lecturer will teach us about how to prepare for interviews', 30, 103, NULL, '14:30'
 );
 INSERT INTO lecture
 VALUES (
     'LC005', 'SP002', TO_DATE('2018-10-10','YYYY-MM-DD'), 'R006', 'Ethical hacking', 
-    'The lecturer will teach us about what is ethical hacking', 100, 105, NULL
+    'The lecturer will teach us about what is ethical hacking', 100, 105, NULL, '12:00'
 );
 INSERT INTO lecture
 VALUES (
     'LC006', 'SP005', TO_DATE('2018-04-01','YYYY-MM-DD'), 'R002', 'Academic Writing', 
-    'The lecturer will teach international students to how to write academically proper.', 23, 103, 1009
+    'The lecturer will teach international students to how to write academically proper.', 23, 103, 1009, '12:30'
 );
 
 ----------------------------------------------Lecture_Equipment----------------------------------------------
