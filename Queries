@@ -1,1 +1,11 @@
+/*
+  1. Displaying avarage feedback mark for each speaker.
+*/
+
+select round(avg(mark),2) as "Feedback Mark", speaker_fname
+from speaker, lecture, feedback
+where speaker.speaker_id = lecture.speaker_id
+and lecture.lecture_id = feedback.lecture_id
+group by speaker_fname
+order by speaker_fname;
 
