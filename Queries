@@ -1,6 +1,5 @@
-/*
-  1. Displaying avarage feedback mark for each speaker.
-*/
+
+ -- 1. Displaying avarage feedback mark for each speaker.
 
 select round(avg(mark),2) as "Feedback Mark", speaker_fname
 from speaker, lecture, feedback
@@ -8,4 +7,15 @@ where speaker.speaker_id = lecture.speaker_id
 and lecture.lecture_id = feedback.lecture_id
 group by speaker_fname
 order by speaker_fname;
+
+-- 2. Retrieving volunteering students.
+
+select lecture.stud_ID, first_name as "Student Name", phone_number
+from student, lecture
+where student.stud_id = lecture.stud_id;
+
+-- 3.
+
+
+
 
