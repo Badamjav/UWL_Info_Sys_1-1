@@ -146,6 +146,32 @@ VALUES (
     'LC006', 'SP005', TO_DATE('2018-04-01','YYYY-MM-DD'), 'R002', 'Academic Writing', 
     'The lecturer will teach international students to how to write academically proper.', 23, 103, 1009, '12:30'
 );
+INSERT INTO lecture
+VALUES (
+    'LC007', 'SP007', TO_DATE('2017-04-02','YYYY-MM-DD'), 'R010', 'General knowledge', 
+    'General knowledge quiz.', 41, 102, 1009, '12:00'
+);
+INSERT INTO lecture
+VALUES (
+    'LC008', 'SP002', TO_DATE('2018-04-21','YYYY-MM-DD'), 'R008', 'Career advice', 
+    'Career chosing advice and recomendation.', 32, 105, 1010, '17:00'
+);
+INSERT INTO lecture
+VALUES (
+    'LC009', 'SP001', TO_DATE('2018-06-01','YYYY-MM-DD'), 'R008', 'Meditation', 
+    'How you can release your stress out during your term time.', 13, 101, 1010, '19:00'
+);
+
+INSERT INTO lecture
+VALUES (
+    'LC010', 'SP004', TO_DATE('2018-05-21','YYYY-MM-DD'), 'R002', 'BT networking', 
+    'Becoming a BTs networking engineer', 113, 104, 1017, '13:00'
+);
+INSERT INTO lecture
+VALUES (
+    'LC016', 'SP007', TO_DATE('2018-04-01','YYYY-MM-DD'), 'R005', 'Becoming a better codder', 
+    'The lecturer will teach how to become a better codder.', 203, 101, 1010, '11:00'
+);
 
 ----------------------------------------------Lecture_Equipment----------------------------------------------
 
