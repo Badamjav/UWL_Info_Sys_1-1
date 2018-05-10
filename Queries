@@ -14,7 +14,23 @@ select lecture.stud_ID, first_name as "Student Name", phone_number
 from student, lecture
 where student.stud_id = lecture.stud_id;
 
--- 3.
+-- 3. Retrieving students who are currently on a placement.
+
+select placement.stud_id as "Student ID",first_name as "Student Name", org_name
+from student, placement, organisation
+where student.stud_id = placement.stud_id
+and organisation.org_id = placement.org_id
+and end_date > sysdate;
+
+-- 4. Retrieving students who have already finished their placement.
+
+select placement.stud_id as "Student ID",first_name as "Student Name", org_name
+from student, placement, organisation
+where student.stud_id = placement.stud_id
+and organisation.org_id = placement.org_id
+and end_date < sysdate;
+
+-- 5. 
 
 
 
