@@ -30,7 +30,24 @@ where student.stud_id = placement.stud_id
 and organisation.org_id = placement.org_id
 and end_date < sysdate;
 
--- 5. 
+-- 5.  Retrieving projects that have finished.
+
+select project_name as "Project Name", org_name as "Organisation Name", staff_name as "Staff Name"
+from staff, organisation, projects
+where staff.staff_id = organisation.staff_id
+and organisation.org_id = projects.org_id
+and end_date < sysdate;
+
+-- 6. Retrieving ongoing projects.
+select project_name as "Project Name", org_name as "Organisation Name", staff_name as "Staff Name"
+from staff, organisation, projects
+where staff.staff_id = organisation.staff_id
+and organisation.org_id = projects.org_id
+and end_date > sysdate;
+
+
+
+
 
 
 
