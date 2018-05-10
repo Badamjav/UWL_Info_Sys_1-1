@@ -63,7 +63,7 @@ CREATE TABLE placement(
     REFERENCES Student(stud_ID)
 );
 -----------------------------------------------------------------------
-CREATE TABLE L_project(
+CREATE TABLE projects(
     Project_ID VARCHAR(7) NOT NULL,
     Project_Name CHAR(50) NOT NULL,
     Start_Date DATE NOT NULL,
