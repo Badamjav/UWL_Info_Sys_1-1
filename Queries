@@ -53,6 +53,20 @@ where student.stud_id = lecture.stud_id
 group by first_name, phone_number
 order by count(lecture.stud_id);
 
+-- 8. Retrieving which student's designated supervisors.
+
+select placement.stud_id as "Student ID", staff.staff_name as "Supervisor Name", staff.contact_number as "Supervisor phoneNumber"
+from student, placement, organisation, staff
+where student.stud_id = placement.stud_id
+and staff.staff_id = organisation.staff_id
+and organisation.org_id = placement.org_id;
+
+-- 9.
+
+
+
+
+
 
 
 
