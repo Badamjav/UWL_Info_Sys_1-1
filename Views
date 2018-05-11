@@ -12,3 +12,12 @@ and room.room_id = lecture.room_id
 and lecture.lecture_id = lecture_equipment.lecture_id
 and required_equipment.equipment_id = lecture_equipment.equipment_id
 and student.stud_id = lecture.stud_id;
+
+/*
+    Creating View for Contact history
+*/
+create view Staff_Contact_history as
+select staff_name, contact_date, comments, org_name, org_description, phone_number as "Org Phone Number"
+from staff, contact_history, organisation
+where staff.staff_id = contact_history.staff_id
+and organisation.org_id = contact_history.org_id;
