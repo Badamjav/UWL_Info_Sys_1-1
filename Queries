@@ -61,7 +61,14 @@ where student.stud_id = placement.stud_id
 and staff.staff_id = organisation.staff_id
 and organisation.org_id = placement.org_id;
 
--- 9.
+-- 9. Retrieving Contact history with the organisations.
+
+select org_name as "Organisation Name", phone_number as "Org Phone Number", staff_name, contact_date, comments
+from organisation, contact_history, staff
+where organisation.org_id = contact_history.org_id
+and staff.staff_id = contact_history.STAFF_ID;
+
+
 
 
 
