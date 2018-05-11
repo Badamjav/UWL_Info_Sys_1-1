@@ -1,1 +1,25 @@
 
+-- 1. Creating before insert trigger to generate staff_id automatically.
+
+create or replace trigger tr_staff_id
+before insert on staff
+for each row
+declare 
+    v_staff_id staff.staff_id%type;
+begin 
+    select max(staff_id)
+    into v_staff_id
+    from staff;
+    v_staff_id := v_staff_id +1;
+    :new.staff_id := v_staff_id;
+end;
+
+-- 2. Creating after delete trigger to save the backup of entities.
+
+create or replace trigger tr_backUp_contact_history
+after delete on contact_history
+for each row 
+begin
+    insert into contact_history_backup(contacthistory_id, org_id, contact_date, comments, staff_id)
+    values ( :old.contacthistory_id, :old.org_id, :old.contact_date, :old.comments, :old.staff_id);
+end;
