@@ -68,6 +68,22 @@ from organisation, contact_history, staff
 where organisation.org_id = contact_history.org_id
 and staff.staff_id = contact_history.STAFF_ID;
 
+-- 10. Retrieving lecture attendance with the name of speaker along with company.
+
+select speaker_fname, org_name, lecture_attendance
+from organisation, speaker, lecture
+where organisation.org_id = speaker.org_id
+and speaker.speaker_id = lecture.speaker_id;
+
+-- 11. Retrieving lecture start time and room number information for the speakers. Only future dates are listed.
+
+select speaker_fname as "Speaker Name", start_date, room_number, lec_start_time as "Lecture Start Time"
+from speaker, lecture, room
+where speaker.speaker_id = lecture.speaker_id
+and room.room_id = lecture.room_id
+and start_date > sysdate
+order by start_date;
+
 
 
 
